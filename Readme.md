@@ -2,13 +2,14 @@
 
 This python group project attempts to sort, classify and remove cloud-contaminated pixels from satellite imagery (sentinel imagery) within a defined Area of Interest (AOI). The main aim of this project is to give users the ability to filter images based on cloud cover by using Google Earth Engine (GEE) and python (geemap).
  
-Cloud masking on GEE using Landsat 8 involves the identification and removal of cloud-contaminated pixels from satellite imagery. Sentinel-2, equipped with the MultiSpectral Instrument (MSI), captures high-resolution multispectral data. However, cloud cover can hinder the interpretation of Earth’s surface features. Removing cloud contaminated pixels using python technique (GEE) enhances the usability of Sentinel-2 imagery for various applications, including land cover classification, vegetation monitoring, and change detection.
+Cloud masking on GEE involves the identification and removal of cloud-contaminated pixels from satellite imagery. Sentinel-2, equipped with the MultiSpectral Instrument (MSI), captures high-resolution multispectral data. However, cloud cover can hinder the interpretation of Earth’s surface features. Removing cloud contaminated pixels using python technique (GEE) enhances the usability of Sentinel-2 imagery for various applications, including land cover classification, vegetation monitoring, and change detection.
+
 
 # Tasks:
-Accessing GEE's Python API.
-Filtering satellite images by AOI and date.
-Sorting images by cloud coverage within the AOI.
-Providing a Jupyter Notebook with the code.
+Access GEE's Python API.
+Filter satellite images by AOI and date.
+Sort images by cloud coverage within the AOI.
+Provide a Jupyter Notebook with the code.
 Documentation.
 
 # Table of Contents

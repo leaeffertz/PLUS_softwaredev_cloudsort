@@ -4,8 +4,11 @@ This python group project aims to sort, classify and remove cloud-contaminated p
 
 # Tasks
 Access GEE's Python API
+
 Filter satellite images by AOI and date
+
 Sort images by cloud coverage within the AOI
+
 Provide a Jupyter Notebook with the code. Documentation
 
 # Table of Contents

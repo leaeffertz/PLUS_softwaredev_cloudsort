@@ -11,15 +11,17 @@ Sort images by cloud coverage within the AOI
 
 Provide a Jupyter Notebook with the code. Documentation
 
-# Table of Contents
-Existing Classifications for Cloud Coverage
-How Current Algorithms work
-Project Setup
-Gaining Entry to GEE
-Filter Image Collection
-Cloud Coverage Sorting
-Package for Python (Optional)
-Educational Materials
+# Features
+Automatically gets Sentinel-2 imagery within a given area of interest (AOI) and time period.
+
+uses the cloud masking method of Google Earth Engine to sort the images according to the amount of cloud cover.
+
+Visualization of cloud coverage for each image in the collection.
+
+Exports the clearest pictures for futher examination.
+
+Interactive widgets for configuring parameters, such as start and finish dates and cloud thresholds, are optional.
+
 
 # 1. Existing Classifications for Cloud Coverage
 It's critical to comprehend the current cloud cover categories used in remote sensing before creating our own approach. Numerous satellite data sources currently use automated methods to classify cloud coverage, including Sentinel-2 and Landsat.

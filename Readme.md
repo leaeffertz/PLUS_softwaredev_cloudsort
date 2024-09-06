@@ -1,8 +1,6 @@
-# Overview of Sorting Cloud Cover
+# **Sorting of Cloud Cover in Sentinel Imagery using (Python and GEE)**
 
-This python group project attempts to sort, classify and remove cloud-contaminated pixels from satellite imagery (sentinel imagery) within a defined Area of Interest (AOI). The main aim of this project is to give users the ability to filter images based on cloud cover by using Google Earth Engine (GEE) and python (geemap).
- 
-Cloud masking on GEE involves the identification and removal of cloud-contaminated pixels from satellite imagery. Sentinel-2, equipped with the MultiSpectral Instrument (MSI), captures high-resolution multispectral data. However, cloud cover can hinder the interpretation of Earth’s surface features. Removing cloud contaminated pixels using python technique (GEE) enhances the usability of Sentinel-2 imagery for various applications, including land cover classification, vegetation monitoring, and change detection.
+This python group project aims to sort, classify and remove cloud-contaminated pixels from satellite imagery (sentinel imagery) within a defined Area of Interest (AOI), using Google Earth Engine (GEE) and python (geemap). Cloud masking on GEE involves the identification and removal of cloud-contaminated pixels from satellite imagery. Sentinel-2, equipped with the MultiSpectral Instrument (MSI), captures high-resolution multispectral data. However, cloud cover can hinder the interpretation of Earth’s surface features. Removing cloud contaminated pixels using python technique (GEE) enhances the usability of Sentinel-2 imagery for various applications, including land cover classification, vegetation  and environmental monitoring, and change detection.
 
 
 # Tasks:

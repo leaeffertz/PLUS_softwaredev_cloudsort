@@ -1,5 +1,9 @@
 # Sources used:
 
+* https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+* https://developers.google.com/earth-engine/tutorials/community/intro-to-python-api
+
 * https://philippgaertner.github.io/2020/08/percent-cloud-cover/
 
 * https://medium.com/google-earth/more-accurate-and-flexible-cloud-masking-for-sentinel-2-images-766897a9ba5f

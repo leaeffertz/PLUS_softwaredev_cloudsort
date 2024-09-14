@@ -40,3 +40,6 @@ For further learning, refer to the learning_resources.md file, which contains gu
 
 # Contributors
 Owhorji Miracle Chinwe
+Yana Nikolova
+Damilola Oluwaseun Alfred
+Lea Effertz

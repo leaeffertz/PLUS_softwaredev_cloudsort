@@ -10,43 +10,53 @@ This python group project aims to sort, filter, classify and remove cloud-contam
 
 # code to install the necessary packages using pip in python
 !pip install geopandas
+
 !pip install geemap
 
 
 # code to create a new envirronment in python
 conda create -n gee_env python=3.9
+
 conda activate gee_env
 
 
 # code to install jupyter notebook
 pip install jupyter
+
 jupyter notebook
 
 
 # After installing the packages, We authenticate with Google Earth Engine account to access it in jupyter.
 import ee
+
 ee.Authenticate()
+
 ee.Initialize()
 
 
 # Path to the shapefile
 We use an AOI by downloading a shp file of a region around salzburg
+
 shapefile_path = "C:\Users\owhor\Downloads\PLUS_softwaredev_cloudsort-main\PLUS_softwaredev_cloudsort-main\Sample_data\Sample_AOI\AOI_Salzachauen_buffer_150m_WGS84_33N_gcs.shp"
 
 
 # Setting the Time for the Sentinel-2 image collection.
 start_date = "2020-01-01"
+
 end_date = "2021-01-01"
 
 
 # Visualizing our AOI on a Map
 Create an interactive map and display our AOI:
+
 Map = geemap.Map()
+
 aoi = geemap.shp_to_ee("C:\Users\owhor\Downloads\PLUS_softwaredev_cloudsort-main\PLUS_softwaredev_cloudsort-main\Sample_data\Sample_AOI\AOI_Salzachauen_buffer_150m_WGS84_33N_gcs.shp")
 
 
 # Add AOI to the map and center it
 Map.addLayer(aoi, {}, "AOI")
+
 Map.centerObject(aoi, 11)
 
 

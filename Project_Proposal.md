@@ -18,7 +18,7 @@ This property is for the whole image scene and not for a single area of interest
 Learn about the Python API, because you mostly worked with Java Script before.
 
 ### Miracle Chinwe Owhorji
-Learn more about Cloud coverage and image pre-processing.
+Learn more about GEE-Python API and image pre-processing.
 
 ### Damilola Oluwaseun Alfred
 Learn more about Python packages and functions and practically applying them.

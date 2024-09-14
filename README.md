@@ -1,39 +1,51 @@
-# Sorting of Cloud Cover in Sentinel Imagery using (Python and GEE) #
+# Sorting of Cloud Cover in Sentinel Imagery using (Python and Google Earth Engine) #
 
-This python group project aims to sort, filter, classify and remove cloud-contaminated pixels from satellite imagery (sentinel imagery) within a defined Area of Interest (AOI), using Google Earth Engine (GEE) and python (geemap). Cloud masking on GEE involves the identification and removal of cloud-contaminated pixels from satellite imagery. Sentinel-2, equipped with the MultiSpectral Instrument (MSI), captures high-resolution multispectral data. However, cloud cover can hinder the interpretation of Earth’s surface features. Removing cloud contaminated pixels using python technique (GEE) enhances the usability of Sentinel-2 imagery for various applications, including land cover classification, vegetation and environmental monitoring, and change detection. The main objective is to ensure that we are able to identify cloud free image which can be used for futher analysis.
+This python group project aims to sort, filter, classify and remove cloud-contaminated pixels from satellite imagery (sentinel imagery) within a defined Area of Interest (AOI) by downloading a shapefile, using Google Earth Engine (GEE) and python (geemap). Cloud removal in Google Earth Engine allows you to hide or highlight specific parts of an image based on certain conditions or criteria. The main objective is to ensure that we are able to identify cloud free image which can be used for futher analysis.
 
-# Tasks
-Access GEE's Python API
+# Installation
 
-Filter satellite images by AOI and date
+1. Install Python: We installed anaconda to create and activate a new working environment.
+2. Install the necessary packages such as geemap and geopandas, using pip.
+3. Install a Jupyter Notebook which contains sections for accessing and filtering GEE data, implementing cloud masking, and sorting the results. The code is organized for ease of understanding and reusability.
 
-Sort images by cloud coverage within the AOI
+# code to install the necessary packages using pip in python
+# !pip install geopandas
+# !pip install geemap
 
-Provide a Jupyter Notebook with the code. Documentation
+# code to create a new envirronment in python
+# conda create -n gee_env python=3.9
+# conda activate gee_env
 
-# Features
-Automatically gets Sentinel-2 imagery within a given area of interest (AOI) and time period which help detects and categorizes clouds using the Sen2Cor algorithm.
+# code to install jupyter notebook
+# pip install jupyter
+# jupyter notebook
 
-Uses the cloud masking method of Google Earth Engine to sort the images according to the amount of cloud cover.
+# After installing the packages, We authenticate with Google Earth Engine account to access it in jupyter.
+# code
+# import ee
+# ee.Authenticate()
+# ee.Initialize()
 
-Visualization of cloud coverage for each image in the collection.
+# Path to the shapefile
+We use an AOI by downloading a shp file of a region around salzburg
+# shapefile_path = "C:\Users\owhor\Downloads\PLUS_softwaredev_cloudsort-main\PLUS_softwaredev_cloudsort-main\Sample_data\Sample_AOI\AOI_Salzachauen_buffer_150m_WGS84_33N_gcs.shp"
 
-Exports the clearest pictures for futher examination.
+# Setting the Time for the Sentinel-2 image collection.
+# code
+# start_date = "2020-01-01"
+# end_date = "2021-01-01"
 
-Interactive widgets for configuring parameters, such as start and finish dates and cloud thresholds, are optional.
+# Visualizing our AOI on a Map
+# Create an interactive map and display our AOI:
+# Map = geemap.Map()
+# aoi = geemap.shp_to_ee("C:\Users\owhor\Downloads\PLUS_softwaredev_cloudsort-main\PLUS_softwaredev_cloudsort-main\Sample_data\Sample_AOI\AOI_Salzachauen_buffer_150m_WGS84_33N_gcs.shp")
 
+# Add AOI to the map and center it
+Map.addLayer(aoi, {}, "AOI")
+Map.centerObject(aoi, 11)
 
-# 1. Gaining Access to GEE
-We all gained access to the Google Earth Engine (GEE) Python API before commencing the project. we also followed different tutorial online. Examples are Open Geospatial Solutions' tutorial to authenticate and install the necessary tools (geemap) using python API(anaconda).
-
-# 2. Filtered Images
-We define an Area of Interest (AOI) either by downloading a folder that contains the shp filee.
-
-# 3. Sort Cloud Coverage
-Cloud Masking at Pixel Level: Use GEE's cloud masking method to refine the imagery, ensuring minimal cloud interference in the AOI.
-
-# 4. Jupyter Notebook
-All code and steps have been combined into a well-documented Jupyter Notebook. The notebook contains sections for accessing and filtering GEE data, implementing cloud masking, and sorting the results. The code is organized for ease of understanding and reusability.
+# Display the map
+Map
 
 # Educational Materials
 For further learning, refer to the learning_resources.md file, which contains guides, instructions, and videos relevant to GEE, geemap, and cloud cover classification techniques.
